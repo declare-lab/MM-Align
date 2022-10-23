@@ -8,4 +8,4 @@ baseline/
 # log file
 *.log
 *.csv
-run*.sh
+src/run*.sh

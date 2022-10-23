@@ -14,7 +14,7 @@ Alternatively, if you'd like to extract the features by yourself, you can downlo
 
 Next, split the processed dataset into complete/incomplete partitions using `scripts/split_dataset.py`
 ```bash
-python split_dataset.py --data_path <path_to_pickle_files> --seed <seed> --group_id <group_id> --complete_ratio <complete_ratio>
+python split_dataset.py --data_path <path_to_pickle_files> --seed <seed> --group_id <group_id> --complete_ratio <complete_ratio> --split <split>
 ```
 We provide an example script `script/run_split.sh`, which automatically generates 5 different partitions for a given dataset under the seed 2020-2024.
 
