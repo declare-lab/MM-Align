@@ -1,0 +1,11 @@
+__pycache__/
+pre_trained_models/
+img/
+unused/
+results*/
+baseline/
+
+# log file
+*.log
+*.csv
+run*.sh
