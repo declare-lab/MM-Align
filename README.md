@@ -1,6 +1,6 @@
 # MM-Align: Learning Optimal Transport-based Alignment Dynamics for Fast and Accurate Inference on Missing Modality Sequences
 
-This repository contains the official implementation of the paper: [MM-Align: Learning Optimal Transport-based Alignment Dynamics for Fast and Accurate Inference on Missing Modality Sequences (EMNLP 2022)]()
+This repository contains the official implementation of the paper: [MM-Align: Learning Optimal Transport-based Alignment Dynamics for Fast and Accurate Inference on Missing Modality Sequences (EMNLP 2022)](https://arxiv.org/pdf/2210.12798v1.pdf)
 
 
 ## Setup
