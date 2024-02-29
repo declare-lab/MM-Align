@@ -19,14 +19,14 @@ python split_dataset.py --data_path <path_to_pickle_files> --seed <seed> --group
 We provide an example script `script/run_split.sh`, which automatically generates 5 different partitions for a given dataset under the seed 2020-2024.
 
 ### Conda Environemnt
-```
+```bash
 conda env create -f environment.yml
 conda activate mmalign
 python -m spacy download en_core_web_sm
 ```
 
 ## Train and Test
-```
+```bash
 cd src
 python main.py --dataset <dataset_name> --data_path <path_to_dataset> --group_id <group_to_experiment> --modals <modality_pairs> --save_name <name_prefix>
 ```
