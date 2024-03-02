@@ -2,8 +2,20 @@
 
 This repository contains the official implementation of the paper: [MM-Align: Learning Optimal Transport-based Alignment Dynamics for Fast and Accurate Inference on Missing Modality Sequences (EMNLP 2022)](https://arxiv.org/pdf/2210.12798v1.pdf)
 
+<p align="center">
+    <br>
+    <img src="assets/Problem_setting.png" width=400/>
+    <br>
+<p>
+
 
 ## Setup
+### Conda Environemnt
+```bash
+conda env create -f environment.yml
+conda activate mmalign
+python -m spacy download en_core_web_sm
+```
 
 ### CMU-MOSI and CMU-MOSEI
 Please refer to [this repository](https://github.com/declare-lab/BBFN) to get the .pkl files that store the extracted features (by CMU-MMSDK with integrated COVAREP and P2FA) of the two datasets.
@@ -18,12 +30,6 @@ python split_dataset.py --data_path <path_to_pickle_files> --seed <seed> --group
 ```
 We provide an example script `script/run_split.sh`, which automatically generates 5 different partitions for a given dataset under the seed 2020-2024.
 
-### Conda Environemnt
-```bash
-conda env create -f environment.yml
-conda activate mmalign
-python -m spacy download en_core_web_sm
-```
 
 ## Train and Test
 ```bash
