@@ -18,11 +18,11 @@ python -m spacy download en_core_web_sm
 ```
 
 ### CMU-MOSI and CMU-MOSEI
-Please refer to [this repository](https://github.com/declare-lab/BBFN) to get the .pkl files that store the extracted features (by CMU-MMSDK with integrated COVAREP and P2FA) of the two datasets.
+Please refer to [this repository](https://github.com/declare-lab/BBFN) to get the `.pkl` files that store the extracted features (by CMU-MMSDK with integrated COVAREP and P2FA) of the two datasets.
 
 ### MELD dataset
-You can download the processed dataset (.pkl) from [here](https://drive.google.com/file/d/1RjrYSMpXxg_6r_nUQaysaPyMsldLpMcb/view?usp=sharing).
-Alternatively, if you'd like to extract the features by yourself, you can download the raw dataset from [here](http://web.eecs.umich.edu/~mihalcea/downloads/MELD.Raw.tar.gz). Then you can extract the visual and audio features with [ResNet101](https://github.com/v-iashin/video_features) (FPS=25) and [Wave2Vec2.0](https://huggingface.co/docs/transformers/model_doc/wav2vec2). Additionally, you need to manually gather text and extracted feature vectors by their IDs and split them into train/dev/test.pkl files.
+You can download the processed dataset (`.pkl`) from [here](https://drive.google.com/file/d/1RjrYSMpXxg_6r_nUQaysaPyMsldLpMcb/view?usp=sharing).
+Alternatively, if you'd like to extract the features by yourself, you can download the raw dataset from [here](http://web.eecs.umich.edu/~mihalcea/downloads/MELD.Raw.tar.gz). Then you can extract the visual and audio features with [ResNet101](https://github.com/v-iashin/video_features) (FPS=25) and [Wave2Vec2.0](https://huggingface.co/docs/transformers/model_doc/wav2vec2). Additionally, you need to manually gather text and extracted feature vectors by their IDs and split them into `(train/dev/test).pkl` files.
 
 Next, split the processed dataset into complete/incomplete partitions using `scripts/split_dataset.py`
 ```bash
